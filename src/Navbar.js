@@ -3,8 +3,9 @@ import React from "react";
 const Navbar = (props) => {
     return(
         <div style={styles.nav}>
+            <div style={styles.cartName}>Shopping Cart</div>
             <div style={styles.cartIconContainer}>
-                {/* <div style={styles.cartName}><h1>Shopping Cart</h1></div> */}
+                
                 
                 <img style={styles.cartIcon} src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="cart-icon"
                 />
@@ -40,7 +41,10 @@ const styles = {
       top: -9
     },
     cartName:{
-        
+        fontSize:40,
+        fontWeight: "bold",
+        marginRight: "500px",
+        color:"#590b42"
     }
   };
 export default Navbar;
