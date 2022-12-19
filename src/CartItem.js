@@ -9,9 +9,9 @@ const CartItem =(props)=> {
                 <img style={styles.image} src={product.img} />
             </div>
             <div className="right-block">
-                <div style={{fontSize:25,fontFamily:"cursive",fontWeight:"bold",color:"purple"}}>{title}</div>
-                <div style={{color:"gray"}}>{price}</div>
-                <div style={{color:"gray"}}>{Qty}</div>
+                <div style={{fontSize:25,fontFamily:"inherit",fontWeight:500,color:"#191817"}}>{title}</div>
+                <div style={{color:"gray"}}>price: {price} ₹</div>
+                <div style={{color:"gray"}}>Qty: {Qty}</div>
                 <div className="cart-item-actions">
                     {/*Buttons */}
                     <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" 
@@ -34,6 +34,7 @@ const CartItem =(props)=> {
         </div>
     )
 }
+
   
 
 const styles = {
